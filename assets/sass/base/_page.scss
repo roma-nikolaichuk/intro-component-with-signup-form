@@ -1,0 +1,16 @@
+body {
+  font-family: $theme-text-font;
+  font-size: 1rem;
+  color: $theme-grayish-blue-color;
+  width: 100%;
+  min-height: 100vh;
+
+  @include center-grid;
+
+  background: $theme-red-color no-repeat center center/cover
+    url("../../../assets/images/bg-intro-mobile.png");
+
+  @include media-breakpoint-up(md) {
+    background-image: url("../../../assets/images/bg-intro-desktop.png");
+  }
+}

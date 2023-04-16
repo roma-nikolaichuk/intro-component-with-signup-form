@@ -1,0 +1,25 @@
+.intro {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+
+  @include media-breakpoint-up(md) {
+    margin: 0;
+    text-align: left;
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 3.1rem;
+      line-height: 1.15;
+    }
+  }
+
+  &__description {
+    font-weight: 500;
+    color: $theme-white-color;
+  }
+}

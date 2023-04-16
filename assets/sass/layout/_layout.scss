@@ -1,0 +1,11 @@
+.container {
+  margin: 4.25rem 1.5rem;
+
+  @include media-breakpoint-up(md) {
+    max-width: 1110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+}

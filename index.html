@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Roman Nikolaichuk">
+    <meta
+      name="description"
+      content="Intro Component with sign-up form Solution for FrontendMentor.io. Users should be able to see hover states for all interactive elements on the page. Receive an error message when the form is submittet if: any input field is empty, the email address is not formatted correctly."
+    >
+    <meta
+      name="keywords"
+      content="Frontend Mentor, Frontend, Mentor, Intro Component with sign-up form, Intro Component with sign-up form Solution, Sign-up form, Form, Roman Nikolaichuk, FrontendMentor.io, Roman Nikolaichuk Frontend"
+    >
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    >
+    <script src="./assets/js/footer.js" defer></script>
+    <script src="./assets/js/signup-form.js" async defer></script>
+  </head>
+  <body>
+    <!-- Start of the main container -->
+    <main class="container">
+      <h1 class="sr-only">Intro component with sign-up form</h1>
+
+      <section class="intro">
+        <h1 class="intro__title animate__animated animate__fadeInTopLeft">
+          Learn to code by watching others
+        </h1>
+        <p
+          class="intro__description animate__animated animate__fadeInBottomLeft"
+        >
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+
+      <section class="signup animate__animated animate__zoomIn">
+        <div
+          class="signup__cta animate__animated animate__zoomInDown animate__slow"
+        >
+          <p class="signup__cta-text">
+            <span class="signup__cta-text--free-trial">Try it free 7 days</span>
+            then $20/mo. thereafter
+          </p>
+        </div>
+
+        <form class="signup__form">
+          <div
+            class="signup__form-group animate__animated animate__delay-1s animate__fadeInDown"
+          >
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              class="signup__form-input"
+              placeholder="First Name"
+            >
+            <span
+              id="signup__form-first-name-error"
+              class="signup__form-error"
+            ></span>
+          </div>
+
+          <div
+            class="signup__form-group animate__animated animate__delay-1s animate__fadeInDown"
+          >
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              class="signup__form-input"
+              placeholder="Last Name"
+            >
+            <span
+              id="signup__form-last-name-error"
+              class="signup__form-error"
+            ></span>
+          </div>
+
+          <div
+            class="signup__form-group animate__animated animate__delay-1s animate__fadeInDown"
+          >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="signup__form-input"
+              placeholder="Email Address"
+            >
+            <span
+              id="signup__form-email-error"
+              class="signup__form-error"
+            ></span>
+          </div>
+
+          <div
+            class="signup__form-group animate__animated animate__delay-1s animate__fadeInDown"
+          >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="signup__form-input"
+              placeholder="Password"
+            >
+            <span
+              id="signup__form-password-error"
+              class="signup__form-error"
+            ></span>
+          </div>
+
+          <button
+            id="signup__form-submit"
+            type="submit"
+            class="signup__form-button animate__animated animate__delay-1s animate__zoomIn animate__slow"
+          >
+            Claim your free trial
+          </button>
+
+          <p
+            class="signup__form-terms animate__animated animate__delay-1s animate__fadeInUp"
+          >
+            By clicking the button, you are agreeing to our
+            <a href="#" class="signup__form-link">Terms and Services</a>.
+          </p>
+        </form>
+      </section>
+    </main>
+    <!-- End of the main container -->
+    <!-- Start of the footer -->
+    <footer class="footer">
+      <button
+        class="footer__button js-toggle-tip animate__animated animate__fadeInBottomRight"
+        type="button"
+        aria-label="Attribution"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-controls="attribution"
+      >
+        <img
+          class="footer__image"
+          src="https://avatars.githubusercontent.com/u/107611767?s=400&u=af2347175f31d710bee7ec634f994ae53d460731&v=4"
+          alt=""
+          width="50"
+          height="50"
+        >
+      </button>
+
+      <div
+        id="attribution"
+        role="tooltip"
+        class="footer__attribution footer__dialog js-tooltip"
+      >
+        <p class="footer__text">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1"
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Open in new tab"
+            class="footer__link"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            href="https://github.com/roma-nikolaichuk/intro-component-with-signup-form"
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Open in new tab"
+            class="footer__link"
+            >Roman Nikolaichuk</a
+          >.
+        </p>
+      </div>
+    </footer>
+    <!-- End of the footer -->
+  </body>
+</html>
